@@ -1,0 +1,32 @@
+.footer {
+
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    align-items: center;
+    background-color: #d8d7d7;
+    height: 120px;
+    padding: 10px 20px 20px 20px;
+    flex-direction: column;
+
+    redes {
+        background-color: honeydew;
+        padding: 20px 40 px;
+
+
+       
+
+        iconos {
+            width: 600px;   
+
+            ul {
+
+                display: flex;
+                margin: 0 30px;
+                
+                
+
+            }
+        }
+    }
+}
