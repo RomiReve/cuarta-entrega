@@ -1,34 +1,29 @@
+/*estilos genricos + sección index*/
 *{
     margin:0;
     list-style: none;
     box-sizing: border-box;
     font-weight: 400;
-    text-align: center;
     padding: 0;
     border: 0;
     outline: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    background: transparent;
-    
-    
+    font-size: 100%;   
+    text-decoration:none;
 }
+
 /*scroll más suave en toda la home*/
 html {  
     scroll-behavior: smooth;    
 }
+
 /*estilos navbar*/
 .navbar {
-    height: 100px;
+    height: 150px;
     padding-top: 0;
-    background-color: #a8c18dd9;
-    
+    background-color: #a8c18dd9;    
 }
 
-/*animación h1 index*/
-.titulo-romi:hover {
-    transform: scaleY(1.5);
-}
+/* import estilos seccion footer - formulario - alimentacion -meditaciones -ejercicios*/ 
 
 /*import componente footer*/
 @import"./componentes/footer";

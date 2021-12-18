@@ -1,6 +1,7 @@
+/*estilos sección principal atitulo y banner*/
 #intro-ejercicios {
     height:100 px;
-    background-image: url(/proyecto_romina_revello/multimedia/imagenes_ejercicios/flor.png);
+    background-image: url(../../multimedia/imagenes_ejercicios/flor.png);
     background-position:top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -13,8 +14,7 @@
         text-align: center;
         background-color: black;
         margin-bottom: 15px;
-        padding: 10px;
-        font-weight: bold;  
+        padding: 10px;  
     }
 }
 h1 {
@@ -27,6 +27,7 @@ h2 {
     font-size: 12px;
 
 }
+/* se deja el codigo original a modo de comentarios - inicialmente se trabajo esta sección con grid, versión final se realza con system grid de bootstrap
 .section-ejercicios {
     display: grid;
     grid-template-columns: 1fr 1fr ;
@@ -42,7 +43,7 @@ h2 {
         height: 400px;
         justify-content: left;
         background-color:#a6acaf;
-        background-image: url(/proyecto_romina_revello/multimedia/imagenes_ejercicios/yoga_2.jpg);
+        background-image: url(../../multimedia/imagenes_ejercicios/yoga_2.jpg);
         border-radius: 10px;
         margin: auto;    
         background-size: cover;
@@ -64,7 +65,7 @@ h2 {
     height: 400px;
     justify-content: right;
     background-color: #a6acaf;  
-    background-image: url(/proyecto_romina_revello/multimedia/imagenes_ejercicios/yoga_1.jpg);
+    background-image: url(../../multimedia/imagenes_ejercicios/yoga_1.jpg);
     border-radius: 10px;
     margin: auto;
     background-size: cover;
@@ -103,10 +104,10 @@ h2 {
         width: 600px;
         height: 400px;
         justify-content: left;
-        background-color:#a6acaf;
+        background-color:#c0bcb0;
         border-radius: 10px;
         margin: auto;
-        color: ivory;    
+        color: #5b5a55;    
         h3 {
             text-align: justify;
             padding: 50px 20px;  
@@ -119,16 +120,16 @@ h2 {
         width: 600px;
         height: 400px;
         justify-content: right;
-        background-color:#a6acaf;  
+        background-color:#c0bcb0;  
         border-radius: 10px;
         margin:auto;
         h3 {
             text-align: justify;
             padding: 100px 20px;
-            color: ivory; 
+            color: #5b5a55; 
             font-size: 18px; 
 
         }
 
     }
-}
+}*/

@@ -1,17 +1,16 @@
 @charset "UTF-8";
+/*estilos genricos + sección index*/
 * {
   margin: 0;
   list-style: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-weight: 400;
-  text-align: center;
   padding: 0;
   border: 0;
   outline: 0;
   font-size: 100%;
-  vertical-align: baseline;
-  background: transparent;
+  text-decoration: none;
 }
 
 /*scroll más suave en toda la home*/
@@ -21,17 +20,12 @@ html {
 
 /*estilos navbar*/
 .navbar {
-  height: 100px;
+  height: 150px;
   padding-top: 0;
   background-color: #a8c18dd9;
 }
 
-/*animación h1 index*/
-.titulo-romi:hover {
-  -webkit-transform: scaleY(1.5);
-          transform: scaleY(1.5);
-}
-
+/* import estilos seccion footer - formulario - alimentacion -meditaciones -ejercicios*/
 /*import componente footer*/
 .footer {
   display: -webkit-box;
@@ -44,13 +38,14 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #d8d7d7;
+  background-color: #ddc1a7;
   height: 120px;
-  padding: 10px 20px 20px 20px;
+  padding: 20px 20px 20px 20px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-top: 10px;
 }
 
 .footer redes {
@@ -113,26 +108,24 @@ textarea {
 }
 
 .bg-form {
-  background-image: url(../multimedia/imagenes_ejercicios/yoga_bannerr.png);
+  background-image: url(../..//multimedia/imagenes_ejercicios/yoga_bannerr.png);
   height: 300px;
   background-position: center;
 }
 
 /*import sección alimentación*/
-/*sección alimentación*/
+/*estilos sección principal atitulo y banner*/
 #intro-alimentos {
-  height: 100 px;
   background-color: #ebebd0;
-  background-image: url(../multimedia/imagenes_alimentacion/banner_header.jpg);
-  background-position: center;
+  background-image: url(../../multimedia/imagenes_alimentacion/banner.jpg);
+  background-position: bottom center;
   background-repeat: no-repeat;
   background-size: cover;
   padding: top 10px;
-  height: 200px;
+  height: 250px;
 }
 
 #intro-alimentos __titulo-alimentos {
-  color: #fff;
   font-size: 48px;
   text-align: left;
   margin-right: 200px;
@@ -145,233 +138,197 @@ textarea {
   font-style: normal;
   font-size: 20px;
   text-align: center;
-  background-color: #f1f1f1;
   margin-bottom: 15px;
   padding: 10px;
 }
 
+/* categoria alimentos se deja codigo a modo comentario - se uso ystem grid de bootstrap
 .section-alimentos {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: 200px 200px;
-      grid-template-rows: 200px 200px;
-  grid-gap: 10px 40px;
-  width: 100%;
-  margin: auto;
-  background-color: #f1f1f1;
-  padding: 30px 20px 10px 30px;
-}
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:400px;
+    grid-column-gap: 20px;
+    width: 100%;
+    padding: 10px;
+    background-color:#f1f1f1;
+    justify-content: center;
+    grid-auto-columns: minmax(125px, auto);
 
-.section-alimentos .bloque1-alimentos {
-  width: 400px;
-  height: 400px;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
-  background-color: #ebebd0;
-  border-radius: 40px;
-  margin: auto;
-  background-image: url(../multimedia/imagenes_alimentacion/frutos_secos.jpg);
-}
+    .bloque1-alimentos {
+        width: 25rem;
+        height: 25rem;
+        justify-content: left;
+        background-color:rgb(235, 235, 208);
+        border-radius: 2.5rem;
+        margin: auto;    
+        background-image: url(../../multimedia/imagenes_alimentacion/frutos_secos.jpg);
 
-.section-alimentos .bloque1-alimentos .bloque2-alimentos {
-  width: 800px;
-  height: 400px;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
-  background-color: #98e098;
-  margin: auto;
-  font-size: 14px;
-}
+        .bloque2-alimentos {
 
-.section-alimentos .bloque1-alimentos .bloque2-alimentos .video {
-  width: 600px;
-  height: 400px;
-  border-radius: 40px;
-}
+            width: 25rem;
+            height: 25rem;
+            justify-content: right;
+            background-color: #98e098;
+            margin: auto;
+            font-size: 0.875rem;
 
-.section-alimentos .bloque1-alimentos .bloque2-alimentos .video .beneficios {
-  text-align: center;
-  padding: 20px 20px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-}
+            .video {
+                width: 600px;
+                height: 400px;
+                border-radius: 40px;
 
-.section-alimentos .bloque1-alimentos .bloque2-alimentos .video .beneficios .texto {
-  padding: 20px 20px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  padding: 20px 20px;
-  height: 400px;
-  width: 400px;
-}
+            .beneficios {
+                text-align: center;
+                padding: 1.25rem 1.25rem;
+                align-self: center;
 
+            .texto {
+                padding: 20px 20px;
+                align-self: center;
+                padding: 20px 20px;
+                height: 400px;
+                width: 400px;
+
+            }
+            }
+
+            
+             
+
+                }
+            }
+
+        }
+    }
 .section2-alimentos {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: 200px 200px;
-      grid-template-rows: 200px 200px;
-  grid-gap: 10px 40px;
-  width: 100%;
-  margin: auto;
-  background-color: #f1f1f1;
-  padding: 30px 20px 10px 10px;
-}
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:400px;
+    grid-column-gap: 20px;
+    width: 100%;
+    padding: 10px;
+    background-color:#f1f1f1;
+    justify-content: center;
+    grid-auto-columns: minmax(125px, auto);
 
-.section2-alimentos .bloque3 {
-  width: 400px;
-  height: 400px;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
-  background-color: #ebebd0;
-  border-radius: 40px;
-  margin: auto;
-  background-image: url(../multimedia/imagenes_alimentacion/matcha.jpg);
-  background-size: cover;
-  background-position: center;
-}
+    .bloque3 {
+        width: 400px;
+        height: 400px;
+        justify-content: left;
+        background-color:rgb(235, 235, 208);
+        border-radius: 40px;
+        margin: auto;
+        background-image: url(../../multimedia/imagenes_alimentacion/matcha.jpg);
+        background-size: cover;
+        background-position:center;
+        .bloque4 {
+            width: 800px;
+            height: 400px;
+            justify-content: right;
+            background-color: #8bc34a8f;
+            margin:auto;
 
-.section2-alimentos .bloque3 .bloque4 {
-  width: 800px;
-  height: 400px;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
-  background-color: #8bc34a8f;
-  border-radius: 40px;
-  margin: auto;
+        }
+    }
+    
 }
-
+*/
 /*import sección meditaciones*/
+/*estilos sección principal meditaciones titulo y banner*/
 #intro-meditaciones {
   height: 100 px;
   background-color: #ebebd0;
-  background-image: url(../multimedia/imagenes_meditaciones/bannerpan02.jpg);
+  background-image: url(../../multimedia/imagenes_meditaciones/bannerpan02.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   padding: top 10px;
-  height: 150px;
+  height: 250px;
 }
 
 #intro-meditaciones .intro-meditaciones__titulo-meditaciones {
   color: #a9554f;
   font-size: 48px;
-  text-align: center;
+  text-align: left;
   margin-right: 200px;
-  /**&:hover {
-            transform: scale(0.5);
-            transition-property: width;
-            transition-duration: 2s;
-            transition-timing-function: linear;
-            transition-delay: 1s;
-        }**/
 }
 
 #intro-meditaciones .intro-meditaciones__titulo-meditaciones .intro-meditaciones__texto {
   color: black;
   font-style: normal;
-  font-size: 18px;
-  text-align: center;
+  font-size: 16px;
   background-color: #f1f1f1;
   margin-bottom: 15px;
   padding: 10px;
   font-weight: bold;
 }
 
+/* categoria alimentos se deja codigo a modo comentario - se uso ystem grid de bootstrap
 .section-meditaciones {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-  -ms-grid-rows: 250px 250px;
-      grid-template-rows: 250px 250px;
-  grid-gap: 10px 40px;
-  width: 100%;
-  margin: auto;
-  background-color: #f1f1f1;
-  padding: 30px 20px 10px 30px;
-}
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 250px 250px;
+    grid-gap: 10px 40px;
+    width: 100%;
+    margin: auto;
+    background-color:#f1f1f1;
+    padding: 30px 20px 10px 30px;
+    .bloque1_meditaciones {
+        width: 400px;
+        height: 500px;
+        justify-content: center;
+        background-color:rgb(235, 235, 208);
+        background-image: url(./../multimedia/imagenes_meditaciones/gif_meditaciones.gif);
+        margin: auto;      
+        background-size: cover;
+        background-position:bottom;
+        font-size: 10px;
+        color: ivory;
 
-.section-meditaciones .bloque1_meditaciones {
-  width: 400px;
-  height: 500px;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
-  background-color: #ebebd0;
-  background-image: url(../multimedia/imagenes_meditaciones/gif_meditaciones.gif);
-  margin: auto;
-  background-size: cover;
-  background-position: bottom;
-  font-size: 10px;
-  color: ivory;
-}
+    }
+    .bloque2_meditaciones {
+        width: 800px;
+        height: 500px;
+        justify-content: center; 
+        background-image: url(./../multimedia/imagenes_meditaciones/medita_1.jpg);
+        margin: auto;
 
-.section-meditaciones .bloque2_meditaciones {
-  width: 800px;
-  height: 500px;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
-  background-image: url(../multimedia/imagenes_meditaciones/medita_1.jpg);
-  margin: auto;
+    }
 }
-
-.section2 {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-  -ms-grid-rows: 250px 250px;
-      grid-template-rows: 250px 250px;
-  grid-gap: 10px 40px;
-  width: 100%;
-  margin: auto;
-  background-color: #f1f1f1;
-  padding: 30px 20px 10px 30px;
+.section2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 250px 250px;
+    grid-gap: 10px 40px;
+    width: 100%;
+    margin: auto;
+    background-color:#f1f1f1;
+    padding: 30px 20px 10px 30px; 
+    .bloque1_meditaciones {
+        width: 400px;
+        height: 500px;
+        justify-content: left;
+        background-color:#f1f1f1; 
+        margin: auto;  
+    }
+    .bloque2_meditaciones {
+        width: 800px;
+        height: 500px;
+        justify-content: center;
+        background-color:#f1f1f1;  
+        margin:auto;
+        background-size:100%;
+        font-size: 10px;
+        color: ivory;
+        background-image: url(./../multimedia/imagenes_meditaciones/medita_2.jpg);
+    }
 }
-
-.section2 .bloque1_meditaciones {
-  width: 400px;
-  height: 500px;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
-  background-color: #f1f1f1;
-  margin: auto;
-}
-
-.section2 .bloque2_meditaciones {
-  width: 800px;
-  height: 500px;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
-  background-color: #f1f1f1;
-  margin: auto;
-  background-size: 100%;
-  font-size: 10px;
-  color: ivory;
-  background-image: url(../multimedia/imagenes_meditaciones/medita_2.jpg);
-}
-
-.footer {
-  margin-top: 50px;
-}
-
+*/
 /*import sección ejercicios*/
+/*estilos sección principal atitulo y banner*/
 #intro-ejercicios {
   height: 100 px;
-  background-image: url(../multimedia/imagenes_ejercicios/flor.png);
+  background-image: url(../../multimedia/imagenes_ejercicios/flor.png);
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -386,7 +343,6 @@ textarea {
   background-color: black;
   margin-bottom: 15px;
   padding: 10px;
-  font-weight: bold;
 }
 
 h1 {
@@ -399,120 +355,110 @@ h2 {
   font-size: 12px;
 }
 
+/* se deja el codigo original a modo de comentarios - inicialmente se trabajo esta sección con grid, versión final se realza con system grid de bootstrap
 .section-ejercicios {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: 200px 200px;
-      grid-template-rows: 200px 200px;
-  grid-gap: 10px 40px;
-  width: 100%;
-  margin: auto;
-  background-color: #f1f1f1;
-  padding: 30px 20px 10px 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 200px 200px;
+    grid-gap: 10px 40px;
+    width: 100%;
+    margin: auto;
+    background-color:#f1f1f1;
+    padding: 30px 20px 10px 30px;  
+
+    .bloque1-ejercicios {
+        width: 600px;
+        height: 400px;
+        justify-content: left;
+        background-color:#a6acaf;
+        background-image: url(../../multimedia/imagenes_ejercicios/yoga_2.jpg);
+        border-radius: 10px;
+        margin: auto;    
+        background-size: cover;
+        background-position:center;
+        font-size: 10px;
+        color: ivory;    
+
+        h1 {
+            background-color:#a6acaf;
+            text-align: center;
+            height: 60px;
+            padding: 10px;  
+
+        }
+    }
+    
+.bloque2-ejercicios {
+    width: 600px;
+    height: 400px;
+    justify-content: right;
+    background-color: #a6acaf;  
+    background-image: url(../../multimedia/imagenes_ejercicios/yoga_1.jpg);
+    border-radius: 10px;
+    margin: auto;
+    background-size: cover;
+    background-position:center;
+    color: black;  
+    h1 {
+        background-color:#a6acaf;
+        text-align: center;
+        height: 60px;
+        padding: 10px; 
+
+    }
+    h2 {
+        background-color:#a6acaf;
+        text-align: center;
+        height: 30px;
+        padding: 5px;
+
+    }
+
 }
 
-.section-ejercicios .bloque1-ejercicios {
-  width: 600px;
-  height: 400px;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
-  background-color: #a6acaf;
-  background-image: url(../multimedia/imagenes_ejercicios/yoga_2.jpg);
-  border-radius: 10px;
-  margin: auto;
-  background-size: cover;
-  background-position: center;
-  font-size: 10px;
-  color: ivory;
-}
-
-.section-ejercicios .bloque1-ejercicios h1 {
-  background-color: #a6acaf;
-  text-align: center;
-  height: 60px;
-  padding: 10px;
-}
-
-.section-ejercicios .bloque2-ejercicios {
-  width: 600px;
-  height: 400px;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
-  background-color: #a6acaf;
-  background-image: url(../multimedia/imagenes_ejercicios/yoga_2.jpg);
-  border-radius: 10px;
-  margin: auto;
-  background-size: cover;
-  background-position: center;
-  color: black;
-}
-
-.section-ejercicios .bloque2-ejercicios h1 {
-  background-color: #a6acaf;
-  text-align: center;
-  height: 60px;
-  padding: 10px;
-}
-
-.section-ejercicios .bloque2-ejercicios h2 {
-  background-color: #a6acaf;
-  text-align: center;
-  height: 30px;
-  padding: 5px;
 }
 
 .section2-ejercicios {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: 200px 200px;
-      grid-template-rows: 200px 200px;
-  grid-gap: 10px 40px;
-  width: 100%;
-  margin: auto;
-  background-color: #f1f1f1;
-  padding: 30px 20px 10px 10px;
-  border-radius: 10px;
-}
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 200px 200px;
+    grid-gap: 10px 40px;
+    width: 100%;
+    margin: auto;
+    background-color:#f1f1f1;
+    padding: 30px 20px 10px 10px;
+    border-radius: 10px;
+    .bloque3 {
+        width: 600px;
+        height: 400px;
+        justify-content: left;
+        background-color:#c0bcb0;
+        border-radius: 10px;
+        margin: auto;
+        color: #5b5a55;    
+        h3 {
+            text-align: justify;
+            padding: 50px 20px;  
+            font-size: 18px;
 
-.section2-ejercicios .bloque3 {
-  width: 600px;
-  height: 400px;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
-  background-color: #a6acaf;
-  border-radius: 10px;
-  margin: auto;
-  color: ivory;
-}
+        }
 
-.section2-ejercicios .bloque3 h3 {
-  text-align: justify;
-  padding: 50px 20px;
-  font-size: 18px;
-}
+    }
+    .bloque4 {
+        width: 600px;
+        height: 400px;
+        justify-content: right;
+        background-color:#c0bcb0;  
+        border-radius: 10px;
+        margin:auto;
+        h3 {
+            text-align: justify;
+            padding: 100px 20px;
+            color: #5b5a55; 
+            font-size: 18px; 
 
-.section2-ejercicios .bloque4 {
-  width: 600px;
-  height: 400px;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
-  background-color: #a6acaf;
-  border-radius: 10px;
-  margin: auto;
-}
+        }
 
-.section2-ejercicios .bloque4 h3 {
-  text-align: justify;
-  padding: 100px 20px;
-  color: ivory;
-  font-size: 18px;
-}
+    }
+}*/
 /*# sourceMappingURL=styles.css.map */

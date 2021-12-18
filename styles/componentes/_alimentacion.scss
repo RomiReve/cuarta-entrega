@@ -1,25 +1,22 @@
-/*sección alimentación*/
+/*estilos sección principal atitulo y banner*/
 #intro-alimentos {
-    height:100 px;
     background-color: rgb(235, 235, 208);
-    background-image: url(/proyecto_romina_revello/multimedia/imagenes_alimentacion/banner_header.jpg);
-    background-position:center;
+    background-image: url(../../multimedia/imagenes_alimentacion/banner.jpg);
+    background-position: bottom center;
     background-repeat: no-repeat;
     background-size: cover;
     padding: top 10px;
-    height: 200px;
+    height: 250px;
 
 }
 
 #intro-alimentos {
     __titulo-alimentos {
-        color: #fff;
         font-size: 48px;
         text-align: left;
         margin-right: 200px; 
         padding:30px;
         font-weight: bold;
-
     }
 }
 
@@ -29,40 +26,40 @@
         font-style: normal;
         font-size: 20px;
         text-align: center;
-        background-color: #f1f1f1;
         margin-bottom: 15px;
         padding: 10px;
 
     }
 }
-
+/* categoria alimentos se deja codigo a modo comentario - se uso ystem grid de bootstrap
 .section-alimentos {
     display: grid;
-    grid-template-columns: 1fr 1fr ;
-    grid-template-rows: 200px 200px;
-    grid-gap: 10px 40px;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:400px;
+    grid-column-gap: 20px;
     width: 100%;
-    margin: auto;
+    padding: 10px;
     background-color:#f1f1f1;
-    padding: 30px 20px 10px 30px;
+    justify-content: center;
+    grid-auto-columns: minmax(125px, auto);
 
     .bloque1-alimentos {
-        width: 400px;
-        height: 400px;
+        width: 25rem;
+        height: 25rem;
         justify-content: left;
         background-color:rgb(235, 235, 208);
-        border-radius: 40px;
+        border-radius: 2.5rem;
         margin: auto;    
-        background-image: url(/proyecto_romina_revello/multimedia/imagenes_alimentacion/frutos_secos.jpg);
+        background-image: url(../../multimedia/imagenes_alimentacion/frutos_secos.jpg);
 
         .bloque2-alimentos {
 
-            width: 800px;
-            height: 400px;
+            width: 25rem;
+            height: 25rem;
             justify-content: right;
             background-color: #98e098;
             margin: auto;
-            font-size: 14px;
+            font-size: 0.875rem;
 
             .video {
                 width: 600px;
@@ -71,7 +68,7 @@
 
             .beneficios {
                 text-align: center;
-                padding: 20px 20px;
+                padding: 1.25rem 1.25rem;
                 align-self: center;
 
             .texto {
@@ -94,13 +91,14 @@
     }
 .section2-alimentos {
     display: grid;
-    grid-template-columns: 1fr 1fr ;
-    grid-template-rows: 200px 200px;
-    grid-gap: 10px 40px;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:400px;
+    grid-column-gap: 20px;
     width: 100%;
-    margin: auto;
+    padding: 10px;
     background-color:#f1f1f1;
-    padding: 30px 20px 10px 10px; 
+    justify-content: center;
+    grid-auto-columns: minmax(125px, auto);
 
     .bloque3 {
         width: 400px;
@@ -109,18 +107,18 @@
         background-color:rgb(235, 235, 208);
         border-radius: 40px;
         margin: auto;
-        background-image: url(/proyecto_romina_revello/multimedia/imagenes_alimentacion/matcha.jpg);
+        background-image: url(../../multimedia/imagenes_alimentacion/matcha.jpg);
         background-size: cover;
         background-position:center;
         .bloque4 {
             width: 800px;
             height: 400px;
             justify-content: right;
-            background-color: #8bc34a8f; 
-            border-radius: 40px;
+            background-color: #8bc34a8f;
             margin:auto;
 
         }
     }
+    
 }
-
+*/
