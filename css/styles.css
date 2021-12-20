@@ -23,6 +23,11 @@ html {
   height: 150px;
   padding-top: 0;
   background-color: #a8c18dd9;
+  z-index: 1;
+}
+
+.navbar-nav text-end {
+  background-color: white;
 }
 
 /* import estilos seccion footer - formulario - alimentacion -meditaciones -ejercicios*/
